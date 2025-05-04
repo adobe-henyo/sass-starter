@@ -1,0 +1,84 @@
+/* ----------------------------------------------------------------
+	Mixins
+-----------------------------------------------------------------*/
+
+//-------------------- Media Query --------------------//
+@mixin smartphone ($smartphone: 640){
+    @media only screen and (min-width: ($smartphone * 1px)){
+        @content;
+    }
+}
+
+@mixin tablet ($tablet: 768){
+    @media only screen and (min-width: ($tablet * 1px)){
+        @content;
+    }
+}
+
+@mixin large ($large: 992){
+    @media only screen and (min-width: ($large * 1px)){
+        @content;
+    }
+}
+
+@mixin desktop ($desktop: 1200){
+    @media only screen and (min-width: ($desktop * 1px)){
+        @content;
+    }
+}
+
+@mixin desktop-xl ($desktop-xl: 1441){
+    @media only screen and (min-width: ($desktop-xl * 1px)){
+        @content;
+    }
+}
+
+@mixin desktop-xxl ($desktop-xxl: 1680){
+    @media only screen and (min-width: ($desktop-xxl * 1px)){
+        @content;
+    }
+}
+
+@mixin desktop-xxxl ($desktop-xxxl: 1920){
+    @media only screen and (min-width: ($desktop-xxl * 1px)){
+        @content;
+    }
+}
+
+//-------------------- Background --------------------//
+@mixin cover($size:contain) {
+    background-repeat: no-repeat;
+    background-size: $size;
+    background-position: center;
+    display: block;
+}
+
+//-------------------- Container --------------------//
+
+@mixin container{
+    max-width: 90vw;
+    margin: auto;
+    
+    @include desktop{
+        max-width: 1200px;
+    }
+}
+
+//-------------------- absolute --------------------//
+
+@mixin absolute{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin before-after{
+    content: '';
+    position: absolute;
+}
+
+//-------------------- absolute --------------------//
+
+@mixin transition{
+    transition: .2s ease-in-out;
+}

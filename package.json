@@ -1,0 +1,29 @@
+{
+  "name": "gulp-sass-starter",
+  "private": true,
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "clean": "rimraf node_modules dist package-lock.json"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^6.1.2",
+    "del": "^7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^2.1.0",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "postcss-import": "^15.1.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.87.0"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0"
+  }
+}

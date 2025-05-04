@@ -1,0 +1,50 @@
+@use "variables";
+
+/* ----------------------------------------------------------------
+	Settings
+-----------------------------------------------------------------*/
+
+*, *:before, *:after{
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html, body{
+	font-family: "Raleway", sans-serif;
+	scroll-behavior: smooth;
+}
+
+dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+::selection {
+	background: $primaryColor;
+	color: $white;
+	text-shadow: none;
+}
+
+:active,
+:focus { outline: none !important; }
+
+/* ----------------------------------------------------------------
+	Basic Layout Styles
+-----------------------------------------------------------------*/
+p,
+pre,
+ul,
+ol,
+dl,
+dd,
+blockquote,
+address,
+table,
+fieldset,
+form {
+	margin-bottom: 30px;
+	list-style: none; 
+}
+a {border: none;}
+img { max-width: 100%; height: auto;border: none; }
